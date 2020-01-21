@@ -1,3 +1,7 @@
+Forked because of unist-util-is returning false when testing a node with type "element" with "element" as test.
+Could not immediatly figure out what was ultimately causing the issue.
+Disabled the thrown error for now.
+
 # hast-to-hyperscript
 
 [![Build][build-badge]][build]

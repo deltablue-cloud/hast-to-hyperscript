@@ -55,11 +55,12 @@ function wrapper(h, node, options) {
         children: node.children
       }
     }
-  } else if (!element(node)) {
-    throw new Error(
-      'Expected root or element, not `' + ((node && node.type) || node) + '`'
-    )
   }
+  //else if (!element(node)) {
+  //  throw new Error(
+  //    'Expected root or element, not `' + ((node && node.type) || node) + '`'
+  //  )
+  //}
 
   return toH(h, node, {
     schema: settings.space === 'svg' ? svg : html,
